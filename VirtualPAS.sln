@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualPAS", "VirtualPAS\VirtualPAS.csproj", "{D72E0906-24C3-4004-A9E2-E5AEBA768DDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D72E0906-24C3-4004-A9E2-E5AEBA768DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72E0906-24C3-4004-A9E2-E5AEBA768DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72E0906-24C3-4004-A9E2-E5AEBA768DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72E0906-24C3-4004-A9E2-E5AEBA768DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E139A981-A6BE-41E8-99FA-B7E7ED893835}
+	EndGlobalSection
+EndGlobal
