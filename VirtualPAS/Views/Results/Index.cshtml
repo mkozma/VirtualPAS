@@ -1,0 +1,70 @@
+﻿@model List<IGrouping<string, IGrouping<string, VirtualPAS.ViewModels.ResultViewModel>>>
+@{
+    ViewBag.Title = "Virtual PAS Results";
+}
+<html>
+<head>
+    <title>Virtual PAS Results</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <div>
+            <div class="row">
+                <div class="header">Virtual PAS Results</div>
+            </div>
+            <div class="row">
+                <div class="container" id="data">
+                    @foreach (var map in Model)
+                    {
+                    <div class="row">
+                        <div class="container" id="map">
+                            <div class="row">
+                                <div class="col-md-12 h3">
+                                    @map.Key
+                                </div>
+                            </div>
+                            @foreach (var course in map)
+                            {
+                                <div>
+                                    <div class-"container" id="course">
+                                        <div class="col-md-12 course">
+                                            Course @course.Key
+                                        </div>
+                                    
+                                        @foreach (var item in course)                          
+                                        {
+                                            <div>
+                                                <div class="row">
+                                                    <div class="col-md-1"></div>
+                                                    <div class="col-md-1" id="rank">@item.Rank</div>
+                                                    <div class="col-md-2" id="name">@item.FirstName @item.LastName</div>
+                                                    <div class="col-md-2" id="course">@item.CourseDate</div>
+                                                    <div class="col-md-2" id="time">@item.CompletedTime</div>
+                                                    @if (course.Key == "PW")
+                                                    {
+                                                        <div class="col-md-1" id="points">@item.TotalPoints</div>
+                                                    }
+                                                    else
+                                                    {
+                                                        <div class="col-md-1" id="points"></div>
+                                                    }
+                                                    <div class="col-md-1" id="distance">@item.Distance</div>
+                                                    <div class="col-md-2"></div>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesh@*eet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpa*@th.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

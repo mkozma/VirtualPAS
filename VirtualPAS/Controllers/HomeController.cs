@@ -17,14 +17,14 @@ namespace VirtualPAS.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Results for the Virtual Orienteering Season 2020";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Kozma Technology";
 
             return View();
         }

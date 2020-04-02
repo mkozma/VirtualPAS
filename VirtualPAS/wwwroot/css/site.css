@@ -35,3 +35,16 @@ body {
         display: none;
     }
 }
+
+.header {
+    font-size: 20px;
+}
+
+.course {
+    font-size: 16px;
+    color: red;
+}
+
+.points {
+    display:none;
+}
